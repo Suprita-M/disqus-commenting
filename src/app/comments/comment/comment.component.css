@@ -1,0 +1,67 @@
+.reply {
+  color: #999;
+  border: none;
+  margin: 5px 0;
+  font-weight: 500;
+  font-size: 0.7em;
+  padding: 0;
+}
+
+.reply:hover {
+  color: #4267B2;
+  font-weight: 600;
+}
+
+.comment-container {
+  border: 1px solid #eee;
+  margin: 20px;
+}
+
+.add-reply {
+  padding-left: 20px;
+}
+
+.add-reply > button {
+  background-color: transparent;
+  color: #6170b4;
+  padding: 6px;
+  border-radius: 5px;
+  margin: 10px 0;
+  border: none;
+  font-size: 15px;
+}
+
+.add-reply > button[name="cancel"] {
+  background-color: transparent;
+  color: #385898;
+  border: none;
+  font-size: 0.8em;
+}
+
+button:focus {
+  outline: none;
+}
+
+textarea {
+  width: 90%;
+  display: block;
+  /* box-sizing: border-box; */
+}
+
+.name {
+  text-transform: capitalize;
+  color: #385898;
+  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 4px;
+}
+
+.name span {
+  font-size: 0.7em;
+  color: #999;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.comment-text {
+  font-size: 13px;
+}

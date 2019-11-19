@@ -1,0 +1,19 @@
+.add-comment {
+  margin: 0 auto;
+  overflow: overlay;
+  padding: 20px;
+}
+.add-comment > button {
+  background-color: transparent;
+  color: #2748a5;
+  padding: 6px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+textarea
+{
+  width: 85%;
+  display: block;
+}

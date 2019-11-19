@@ -1,0 +1,10 @@
+<h3>{{comments.length}} COMMENTS</h3>
+<hr>
+
+<app-comment *ngFor="let comment of comments" [comment]="comment" (replyRequest)="replyRequest(comment)" ></app-comment>
+
+<div class="add-comment">
+    <img class="profile-thumbnail" src="{{user.thumbnailUrl}}" width="40" height="40"alt="profile-picture">
+    <textarea (keyup.enter)="addNewComment(newComment)" autofocus  #newComment name="new-comment" id="new-comment" rows="4"></textarea>
+    <button (click)="addNewComment(newComment)">Add Comment</button>
+</div>

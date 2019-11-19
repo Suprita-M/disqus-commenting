@@ -1,0 +1,18 @@
+<div class="comment-container">
+  <img class="profile-thumbnail" src="{{comment.thumbnailUrl}}" alt="profile-picture" width="40" height="40" >
+  <div class="name"> {{comment.commenter}} 
+    <span>{{comment.time | relativeTime : comment.time}}</span>
+  </div>
+  <div class="comment-text"> {{comment.message}}</div>
+  <button class="reply" (click)="showReply()">Reply</button>
+  
+  <div *ngIf="comment.replyRequested" class="add-reply">
+    <textarea #newComment name="add-reply" id="add-reply" rows="4"></textarea>
+    <button (click)="addNewComment(newComment)">Reply</button>
+    <button name="cancel" (click)="comment.replyRequested = false">Cancel</button>
+  </div>
+  
+  <div class="replies" *ngFor="let comment of comment.replies">
+    <app-comment [comment]="comment" (replyRequest)="reply($event)"></app-comment>
+  </div>
+</div>
