@@ -1,4 +1,4 @@
-# disqus-commenting
+# Disqus-commenting
 
 # Prerequisites
 Both the CLI and generated project have dependencies that require Node 8.9 or higher, together with NPM 5.5.1 or higher.
